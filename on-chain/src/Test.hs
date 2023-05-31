@@ -1,6 +1,6 @@
 module Test where
 
-import           Prelude                     (IO, error, id, either, (.), Integer, (*))
+import           Prelude                     (error, id, either, (.), Integer, (*))
 
 import qualified Data.ByteString             as BS
 import qualified Data.ByteString.Base16      as BS16

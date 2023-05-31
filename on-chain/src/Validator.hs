@@ -32,7 +32,7 @@ policyWithLiftIntCode :: CompiledCode (BuiltinData -> BuiltinData -> ())
 policyWithLiftIntCode = $$(compile [|| mkWrappedLiftInt ||])
 
 savePolicyWithLiftInt :: IO ()
-savePolicyWithLiftInt = writeCodeToFile "../assets/policy-with-lift.plutus" policyWithLiftIntCode
+savePolicyWithLiftInt = writeCodeToFile "../assets/policy-with-liftInt.plutus" policyWithLiftIntCode
 
 {-# INLINABLE policyWithLiftBS #-}
 policyWithLiftBS :: BuiltinByteString -> ScriptContext -> Bool
@@ -46,4 +46,4 @@ policyWithLiftBSCode :: CompiledCode (BuiltinData -> BuiltinData -> ())
 policyWithLiftBSCode = $$(compile [|| mkWrappedLiftBS ||])
 
 savePolicyWithLiftBS :: IO ()
-savePolicyWithLiftBS = writeCodeToFile "../assets/policy-with-lift.plutus" policyWithLiftBSCode
+savePolicyWithLiftBS = writeCodeToFile "../assets/policy-with-liftiBS.plutus" policyWithLiftBSCode
